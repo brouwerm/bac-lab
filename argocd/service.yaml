@@ -2,16 +2,16 @@ apiVersion: v1
 kind: Service
 metadata:
   # ✏️ Replace YOUR_NAME with your name (lowercase, no spaces)
-  name: nginx-lab-YOUR_NAME
+  name: nginx-lab-brouwerm
   # ✏️ Replace YOUR_STUDENT_ID with your student ID, e.g. student-12
-  namespace: bac-lab-YOUR_STUDENT_ID
+  namespace: bac-lab-student-2
   labels:
     app: nginx-lab
-    trainee: YOUR_NAME
+    trainee: brouwerm
 spec:
   selector:
     app: nginx-lab
-    trainee: YOUR_NAME
+    trainee: brouwerm
   ports:
     - name: http
       protocol: TCP
